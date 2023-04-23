@@ -1,0 +1,42 @@
+.User
+{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.User .logo{
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+}
+
+.User .logo .bell{
+    font-size: 25px;
+    color: #5A5C6B;
+}
+
+.User .text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+}
+
+.User .text .valorant{
+    height: auto;
+    font-size: 15px;
+    color: white;
+}
+.User .tag{
+    color: #5A5C6B;
+}
+
+.User img
+{
+    width: 15%;
+    border-radius: 10px;
+}

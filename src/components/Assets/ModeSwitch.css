@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+.modeswitch{
+    margin-top: 15px;
+    margin-left: 10%;
+    display: flex;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.modeswitch ul{
+    background-color: #161623;
+    border-radius: 10px;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
+
+.modeswitch li{
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    margin: 13px;
+    color: #5A5C6B;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.modeswitch li:hover{
+    background-color: #5A5C6B;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3S;
+    cursor: pointer;
+}

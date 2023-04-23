@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Routes, Router, Route, BrowserRouter } from 'react-router-dom'
+import Dashboard from './components/Pages/Dashboard';
+import Login from './components/Login';
 
 function App() {
+
+  const [riotId, setRiotId] = useState('Draxxxoo');
+  const [riotTag, setRiotTag] = useState('4005');
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={riotId ? <Dashboard riotId={riotId} riotTag={riotTag}/> : <Login setRiotId={setRiotId} setRiotTag={setRiotTag}/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
